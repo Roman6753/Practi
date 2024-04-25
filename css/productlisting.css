@@ -1,0 +1,385 @@
+@font-face {
+    font-family: "ClashDisplay-Light" ;
+    src: url(../fonts/ClashDisplay-Light.woff2);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Clash Display" ;
+    src: url(../fonts/ClashDisplay-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Clash Display-Semibold" ;
+    src: url(../fonts/ClashDisplay-Semibold.woff2);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Clash Display-Bold" ;
+    src: url(../fonts/ClashDisplay-Bold.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Satoshi" ;
+    src: url(../fonts/Satoshi-Regular.woff2);
+    font-weight: 400;
+}
+
+:root{
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-lite-gray: #f9f9f9;
+    --color-dark-primary: #2a254b;
+    --color-nav-links: #726e8d;
+}
+
+
+.btn{
+    color: var(--color-dark-primary);
+    background-color: var(--color-lite-gray);
+    padding: 16px 32px;
+    font-family: "Satoshi";
+    font-size:16px;
+}
+
+.btn:hover{
+    transition: all 0.8s;
+    color: var(--color-lite-gray);
+    background-color: var(--color-dark-primary);
+}
+
+header>div{
+    display: grid;
+    grid-template-columns: 1fr 24px;
+    font-family: "Satoshi";
+    font-size: 14px;
+    background-color: var(--color-dark-primary);
+    color: var(--color-white);
+    padding: 11px 9px;
+    align-items: center;
+}
+
+header div p{
+    display: grid;
+    grid-template-columns: 16px 1fr;
+    justify-self: center;
+    column-gap: 8px;
+
+}
+
+header section{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    padding: 30px 8vw;
+    align-items: center;
+
+}
+
+header section nav{
+    justify-self: center;
+}
+
+header section>a{
+    font-family: "Clash Display";
+    font-size: 24px;
+    color: #22202E;
+}
+
+header section nav ul{
+    display: flex;
+    list-style-type: none;
+    column-gap: 4vw;
+}
+
+header section ul a{
+    color: var(--color-nav-links);
+    font-family: "Satoshi";
+    font-size: 16px;
+}
+
+header section div.icons{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(3,16px);
+    column-gap: 16px;
+}
+
+main section.description{
+    display: grid;
+    padding: 50px 8vw;
+    column-gap: 6vw;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 38vw;
+    align-items: center;
+}
+
+main section.description img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section.description div.dimensions{
+    display: grid;
+    grid-template-columns: max-content 1px max-content 1px max-content;
+    align-items: center;
+    column-gap: 30px;
+}
+
+main section.description div.dimensions div{
+    color: var(--color-black);
+    height: 50%;
+}
+
+main section.description div.dimensions p{
+    display: grid;
+}
+
+main section.description div.quantitity{
+    display: grid;
+    width: 122px;
+    row-gap: 12px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 46px;
+    background-color: var(--color-white);
+    align-items: center;
+    justify-items: center;
+}
+
+main section.description div.quantitity span:first-child{
+    cursor: pointer;
+}
+
+main section.description div.quantitity span:last-child{
+    cursor: pointer;
+}
+
+main section.towar{
+    padding-top: 40px;
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 7.5vw;
+    grid-template-rows: 305 1fr;
+    justify-content: space-between
+}
+
+
+main section.towar article img{
+    height: 100%;
+    display: grid;
+    
+}
+
+main section.towar article.divan{
+    display: grid;
+    
+}
+
+main section.towar article:hover{
+    transform: scale(1.05);
+    transition: all 0.8s;
+}
+
+main section.towar article p{
+    font-size: 20px;
+    font-family: "Clash Display";
+    color: var(--color-black);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+main section.makes{
+    padding: 80px 6vw;
+    display: grid;
+    row-gap: 36px;
+    padding-bottom: 40px;
+}
+
+main section.makes h2{
+    font-family: "Clash Display";
+    font-size: 28px;
+    text-align: center;
+    font-weight: 400;
+}
+
+main section.makes div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 2vw;
+}
+
+main section.makes div article{
+    display: grid;
+    grid-template-rows: 24px repeat(2,1fr);
+    row-gap: 12px;
+    padding: 48px;
+    background-color: var(--color-lite-gray);
+}
+
+main section.makes div article svg{
+    height: 100%;
+}
+
+main section.makes div article h3{
+    font-family: "Clash Display";
+    font-size: 20px;
+    font-weight: 400;
+}
+
+main section.makes div article p{
+    font-family: "Satoshi";
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-black);
+}
+
+main section.startit{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 48vw;
+    column-gap: 16px;
+    
+}
+
+main section.startit div{
+    display: grid;
+    width: 100%;
+    height: 370px;
+    grid-template-rows: min-content;
+    row-gap: 12px;
+    background-color: var(--color-white);
+    padding: 5vw ;
+    color: var(--color-black);
+}
+
+main section.startit a{
+    justify-self: start;
+    align-self: end;
+    background-color: var(--color-nav-links);
+    color: var(--color-white);
+}
+
+
+
+main section.startit div h2{
+    font-family: "Clash Display";
+    font-weight: 400;
+    font-size: 32px;
+    
+}
+
+main section.startit span{
+    font-family: "Satoshi";
+    font-weight: 400;
+    font-size: 18px;
+    
+}
+
+main section.startit img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+main section.startit form input[type=submit]{
+    color: var(--color-white);
+    background-color: var(--color-dark-primary);
+    padding: 0 32px;
+}
+
+main section.startit form input{
+    border: none;
+    padding-left: 3vw;
+    border-radius: 0;
+    height: 20%;
+    padding-top: 200px;
+}
+
+body>footer{
+    display: grid;
+    row-gap: 24px;
+    padding: 60px 6vw 24px 6vw;
+    background-color: var(--color-dark-primary);
+}
+
+
+
+footer header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    padding: 0;
+}
+
+footer header ul{
+    display: grid;
+    row-gap: 12px;
+    list-style-type: none;
+    color: var(--color-white);
+    font-size: 14px;
+}
+
+footer header ul li:nth-child(1){
+    font-family: "Clash Display";;
+}
+
+footer header ul li{
+    font-family: "Satoshi";
+}
+
+body>footer a{
+    color: var(--color-white);
+}
+
+body>footer a:hover{
+    color: var(--color-lite-gray);
+}
+
+footer header form{
+    display: grid;
+    row-gap: 16px;
+    grid-template-rows: min-content;
+}
+
+footer header form h4{
+    font-family: "Clash Display";
+    color: var(--color-white);
+    font-weight: 400;
+}
+
+hr{
+    border-color: var(--color-nav-links);
+}
+
+footer footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+footer span{
+    font-family: "Satoshi";
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-white);
+}
+
+footer footer ul{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 24px;
+    justify-items: end;
+    list-style-type: none;
+    justify-self: end;
+    column-gap: 24px;
+}
+
+footer footer ul svg{
+    height: 100%;
+    color: var(--color-white);
+}
